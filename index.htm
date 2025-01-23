@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1>Recipe Book</h1>
+        <input type="text" id="searchBar" placeholder="Search for recipes..." onkeyup="searchRecipes()">
+    </header>
+
+    <div class="categories">
+        <button onclick="filterByCategory('All')">All</button>
+        <button onclick="filterByCategory('Breakfast')">Breakfast</button>
+        <button onclick="filterByCategory('Lunch')">Lunch</button>
+        <button onclick="filterByCategory('Dessert')">Dessert</button>
+    </div>
+
+
+    <div id="recipeGrid" class="recipe-grid"></div>
+   <div class="image-container">  <img src="${recipe.image}" alt="${recipe.title}" class="responsive-img"></div>
+    
+
+    <div id="submitRecipeForm" class="submit-recipe-form">
+        <h2>Submit Your Recipe</h2>
+        <form onsubmit="submitRecipe(event)">
+            <label for="recipeTitle">Recipe Title</label>
+            <input type="text" id="recipeTitle" required>
+
+            <label for="recipeCategory">Category</label>
+            <select id="recipeCategory" required>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dessert">Dessert</option>
+            </select>
+
+            <label for="recipeDescription">Description</label>
+            <textarea id="recipeDescription" required></textarea>
+
+            <label for="recipeImage">Image URL</label>
+            <input type="url" id="recipeImage" style="width: 100%;" required>
+           
+
+            <label for="recipeIngredients">Ingredients</label>
+            <textarea id="recipeIngredients" required></textarea>
+
+            <label for="recipeInstructions">Instructions</label>
+            <textarea id="recipeInstructions" required></textarea>
+
+            <button type="submit">Submit Recipe</button>
+        </form>
+    </div>
+
+    <center> <a href="https://www.bbcgoodfood.com" >Additional online recipe book website</a></center>
+  <br>
+  <br>
+
+    <footer>
+        <p>&copy; 2025 Sonali Gavate Recipe Book</p>
+        <div class="social-media">
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter">Twitter</i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook">Facebook</i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram">Instagram</i></a>
+        </div>
+    </footer>
+
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Back to Top">↑</button>
+
+   
+
+
+    <script src="script1.js"></script>
+
+   
+</body>
+</html>

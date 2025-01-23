@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Pancakes",
+    "category": "Breakfast",
+    "image": "pancake.jpg",
+    "description": "Fluffy and delicious pancakes for a perfect breakfast.",
+    "ingredients": ["2 cups flour", "1 cup milk", "2 eggs", "2 tbsp sugar", "1 tbsp baking powder"],
+    "instructions": "Mix all ingredients and cook on a hot griddle.",
+    "cooking_time": "20 minutes"
+  },
+  {
+    "id": 2,
+    "name": "Casesar Salad",
+    "category": "Lunch",
+    "image": "Casesar salad.jpg",
+    "description": "A classic Caesar salad with crunchy croutons.",
+    "ingredients": ["Romaine lettuce", "Caesar dressing", "Croutons", "Parmesan cheese"],
+    "instructions": "Toss ingredients together and serve.",
+    "cooking_time": "10 minutes"
+  },
+  {
+    "id": 3,
+    "name": "Chocolate Cake",
+    "category": "Dessert",
+    "image": "chokalate cake.jpg",
+    "description": "Rich and moist chocolate cake for dessert lovers.",
+    "ingredients": ["2 cups flour", "1 cup cocoa powder", "1 cup sugar", "2 eggs", "1 tsp vanilla"],
+    "instructions": "Mix and bake at 350°F for 30 minutes.",
+    "cooking_time": "45 minutes"
+  }
+]
